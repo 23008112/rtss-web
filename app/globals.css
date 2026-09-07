@@ -1,4 +1,4 @@
-﻿@import 'tailwindcss';
+@import 'tailwindcss';
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
 
@@ -1197,7 +1197,45 @@ section[id] { scroll-margin-top: 98px }
 .download h2 { font-size: clamp(52px, 7.4vw, 104px); margin: 28px auto 22px }
 .download p { color: var(--ink-2); max-width: 46ch; margin-inline: auto }
 .download small { display: block; color: var(--muted); font: 11px var(--font-ibm-mono), monospace; margin-top: 20px }
-.download .button { margin-top: 30px }
+.download .button { margin-top: 18px }
+
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+  max-width: 680px;
+  margin-inline: auto;
+}
+.download-card {
+  border: 1px solid var(--edge);
+  border-radius: var(--radius);
+  background: var(--panel);
+  padding: 30px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  transition: border-color .25s ease, transform .25s ease, box-shadow .25s ease;
+}
+.download-card:hover {
+  border-color: var(--edge-strong);
+  transform: translateY(-4px);
+  box-shadow: 0 14px 45px rgba(0, 0, 0, .18);
+}
+.download-card h3 {
+  font: 600 13px var(--font-ibm-mono), monospace;
+  letter-spacing: .1em;
+  color: var(--ink-strong);
+  margin: 0;
+}
+.download-prereq {
+  display: block;
+  color: var(--cyan);
+  font: 10.5px var(--font-ibm-mono), monospace;
+  letter-spacing: .08em;
+}
 
 /* ==========================================================================
    19. FOOTER
@@ -1369,6 +1407,7 @@ section[id] { scroll-margin-top: 98px }
 
   .download { padding-top: 88px; padding-bottom: 96px }
   .download:after { font-size: 150px; right: -24px }
+  .download-grid { grid-template-columns: 1fr }
 
   .site-footer { grid-template-columns: 1fr; gap: 20px }
   .site-footer > div { justify-content: flex-start }

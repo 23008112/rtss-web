@@ -843,11 +843,34 @@ export default function Page() {
         </section>
 
         <section className="download section-pad" id="download">
-          <Badge>LOGITECH OPTIONS+ PLUGIN</Badge>
+          <Badge>REQUIRED PREREQUISITES</Badge>
           <h2>Make every frame<br /><em>count.</em></h2>
-          <p>The .lplug4 package will be available here when the first release is published.</p>
-          <button type="button" className="button button-dark" disabled>Download .LPLUG4 ↘</button>
-          <small>Not yet released — check back for the download link.</small>
+          <div className="download-grid">
+            <div className="download-card">
+              <h3>MSI AFTERBURNER</h3>
+              <span className="download-prereq">Required prerequisite</span>
+              <a
+                className="button button-dark"
+                href="https://www.msi.com/Landing/afterburner/graphics-cards"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download for Windows ↘
+              </a>
+            </div>
+            <div className="download-card">
+              <h3>RIVATUNER STATISTICS SERVER (RTSS)</h3>
+              <span className="download-prereq">Required prerequisite</span>
+              <a
+                className="button button-dark"
+                href="https://www.guru3d.com/files-details/rtss-rivatuner-statistics-server-download.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download for Windows ↘
+              </a>
+            </div>
+          </div>
         </section>
       </main>
 
