@@ -480,7 +480,7 @@ export default function Page() {
               measure. Both are free, and both must be installed and running.
             </p>
             <div className="hero-actions">
-              <a className="button button-dark" href="#download">Download plugin ↘</a>
+              <a className="button button-dark" href="#download">Download MSI + RTSS ↘</a>
               <a className="text-link" href="#system">See how it works ↓</a>
             </div>
             <div className="hero-meta">
