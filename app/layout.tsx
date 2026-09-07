@@ -9,7 +9,7 @@ const mono = IBM_Plex_Mono({ weight: ['400', '600'], subsets: ['latin'], variabl
 
 // Falls back to localhost so `next build` never fails without it, but a real
 // deployment should set this — it anchors OG/twitter image and canonical URLs.
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
